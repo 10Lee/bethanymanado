@@ -64,7 +64,16 @@
             }
         </style>
     </head>
+
     <body>
+        <div class="app">
+            @include('_navbar.nav')
+                
+            @yield('content')
+        </div>
+    </body>
+
+    {{-- <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -79,7 +88,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Bethany Manado
                 </div>
 
                 <div class="links">
@@ -91,5 +100,5 @@
                 </div>
             </div>
         </div>
-    </body>
+    </body> --}}
 </html>
